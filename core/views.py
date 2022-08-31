@@ -20,7 +20,7 @@ class EventViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.EventSerializer
 
     def get_permissions(self):
-        if self.action in ['create', 'destroy', 'update']:
+        if self.action in ['create', 'destroy', 'update', 'retrieve', 'list']:
             return (IsAuthenticated(),)
         return (AllowAny(),)
 
