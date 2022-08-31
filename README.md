@@ -10,8 +10,8 @@
 
 Existen endpoints pretegidos por requerimiento. Las credenciales son:
 
-usuario: admin
-password: 123qeASDASDASD
+   usuario: admin
+   password: 123qeASDASDASD
 
 El método de login es por un token JTW en la cabecera. Por conveniencia, el token tiene larga expiración. 
 El método de autenticación en la cabecera es:
@@ -20,6 +20,11 @@ El método de autenticación en la cabecera es:
 
 Se pueden obtener un nuevo token en `http://127.0.0.1:8000/login/`
 
+Se puede ingresar el JWT en la sección authorize en /swagger
+
+![img.png](img.png)
+
+![img_1.png](img_1.png)
 
 Descripción de los endpoints:
 
